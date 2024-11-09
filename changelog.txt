@@ -1,0 +1,52 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.0.6
+Date: 10.11.2024
+  Bugfixes:
+    - Restructured changelog to allow the in game parcer to read the log. (Sgamez)
+---------------------------------------------------------------------------------------------------
+Version: 2.0.5
+Date: 09.11.2024
+  Changes:
+    - Removed Changelog.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.4
+Date: 08.11.2024
+  Bugfixes:
+    - Changelog error hopefully.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.3
+Date: 04.11.2024
+  Bugfixes:
+    - Possible fix for the new surfaces(other plantes)
+  Changes:
+    - Code seperated for each surface to better maintain the code
+---------------------------------------------------------------------------------------------------
+Version: 2.0.2
+Date: 04.11.2024
+  Bugfixes:
+    - Possible fix for the new surfaces(other plantes)
+---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 03.11.2024
+  Changes:
+    - Changed code for the new surfaces
+---------------------------------------------------------------------------------------------------
+Version: 2.0
+Date: 27.10.2024
+  Features:
+    - Factorio Version 2.0
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 05.10.2021 
+  Features:
+    - Factorio 1.1
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 29.09.2021
+  Changes:
+    - Janky update doesnt really worked out. Don't load this Version!
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 01.02.2020
+  Features:
+    - Ported Version of an old mod. This is where it begins.
