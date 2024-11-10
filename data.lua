@@ -1,5 +1,4 @@
 data:extend({
- 
 	{--hier neu
     type = "generator",
     name = "wind-turbine-1",
@@ -13,36 +12,32 @@ data:extend({
     effectivity = 100.0,
     fluid_usage_per_tick = 0.01,
     maximum_temperature = 100,
-    resistances =
-    {
-      { type = "fire", percent = 20 },
-	  {	type = "physical", percent = 20 },
-      { type = "impact", percent = 30 }
+    resistances = {
+        {type = "fire", percent = 20 },
+        {type = "physical", percent = 20 },
+        {type = "impact", percent = 30 }
     },
     fast_replaceable_group = "wind-turbine",
 	--collision_mask = { "item-layer", "object-layer", "water-tile"},
     collision_box = {{-1.0, -1.0}, {1.0, 1.0}},
 	selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-    fluid_box =
-    {
-      volume = 200,	
-      base_area = 1,
-      height = 2,
-      base_level = -1,
-      --pipe_covers = pipecoverspictures(),
-      pipe_connections =
-      {
-        --{ type = "input-output", position = {0, 3} },
-        --{ type = "input-output", position = {0, -3} },
-      },
-      production_type = "input-output",
-      filter = "steam",
-      minimum_temperature = 0.0
+    fluid_box = {
+        volume = 200,
+        base_area = 1,
+        height = 2,
+        base_level = -1,
+        --pipe_covers = pipecoverspictures(),
+        pipe_connections = {
+        --{ type = "input-output", position = {0, 3}},
+        --{ type = "input-output", position = {0, -3}},
     },
-    energy_source =
-    {
-      type = "electric",
-      usage_priority = "primary-output"
+        production_type = "input-output",
+        filter = "steam",
+        minimum_temperature = 0.0
+    },
+    energy_source = {
+        type = "electric",
+        usage_priority = "primary-output"
     },
 		horizontal_animation = {
 			filename = "__easy-wind-turbine__/graphics/wind_turbine1_horizontal.png",
@@ -67,12 +62,11 @@ data:extend({
                 filename = "__base__/sound/train-wheels.ogg",
                 volume = 0.4
             },
-            match_speed_to_activity = true,			
+            match_speed_to_activity = true,
         },
         min_perceived_performance = 1.0,
         performance_to_sound_speedup = 0.2
     },
-	
 	{--hier neu 2
     type = "generator",
     name = "wind-turbine-2",
@@ -86,36 +80,32 @@ data:extend({
     effectivity = 100.0,
     fluid_usage_per_tick = 0.039,
     maximum_temperature = 100,
-    resistances =
-    {
-      { type = "fire", percent = 20 },
-	  {	type = "physical", percent = 20 },
-      { type = "impact", percent = 30 }
+    resistances = {
+        {type = "fire", percent = 20},
+        {type = "physical", percent = 20},
+        {type = "impact", percent = 30}
     },
     fast_replaceable_group = "wind-turbine",
 	--collision_mask = { "item-layer", "object-layer", "water-tile"},
     collision_box = {{-1.0, -1.0}, {1.0, 1.0}},
 	selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-    fluid_box =
-    {
-	  volume = 200,
-      base_area = 1,
-      height = 2,
-      base_level = -1,
-      --pipe_covers = pipecoverspictures(),
-      pipe_connections =
-      {
-        --{ type = "input-output", position = {0, 3} },
-        --{ type = "input-output", position = {0, -3} },
-      },
-      production_type = "input-output",
-      filter = "steam",
-      minimum_temperature = 0.0
+    fluid_box = {
+        volume = 200,
+        base_area = 1,
+        height = 2,
+        base_level = -1,
+        --pipe_covers = pipecoverspictures(),
+        pipe_connections = {
+            --{ type = "input-output", position = {0, 3}},
+            --{ type = "input-output", position = {0, -3}},
+        },
+        production_type = "input-output",
+        filter = "steam",
+        minimum_temperature = 0.0
     },
-    energy_source =
-    {
-      type = "electric",
-      usage_priority = "primary-output"
+    energy_source = {
+        type = "electric",
+        usage_priority = "primary-output"
     },
 		horizontal_animation = {
 			filename = "__easy-wind-turbine__/graphics/wind_turbine2_horizontal.png",
@@ -138,55 +128,50 @@ data:extend({
                 filename = "__base__/sound/train-wheels.ogg",
                 volume = 0.4
             },
-            match_speed_to_activity = true,			
+            match_speed_to_activity = true,
         },
         min_perceived_performance = 1.00,
         performance_to_sound_speedup = 0.2
     },
-	
 	{--hier neu 3
-    type = "generator",
-    name = "wind-turbine-3",
-    icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
-    icon_size = 32,
-    flags = {"placeable-neutral","player-creation"},
-    minable = {mining_time = 1, result = "wind-turbine-3"},
-    max_health = 400,
-    corpse = "big-remnants",
-    dying_explosion = "medium-explosion",
-    effectivity = 100.0,
-    fluid_usage_per_tick = 0.098,
-    maximum_temperature = 100,
-    resistances =
-    {
-      { type = "fire", percent = 20 },
-	  {	type = "physical", percent = 20 },
-      { type = "impact", percent = 30 }
+        type = "generator",
+        name = "wind-turbine-3",
+        icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
+        icon_size = 32,
+        flags = {"placeable-neutral","player-creation"},
+        minable = {mining_time = 1, result = "wind-turbine-3"},
+        max_health = 400,
+        corpse = "big-remnants",
+        dying_explosion = "medium-explosion",
+        effectivity = 100.0,
+        fluid_usage_per_tick = 0.098,
+        maximum_temperature = 100,
+        resistances = {
+            {type = "fire", percent = 20 },
+            {type = "physical", percent = 20 },
+            {type = "impact", percent = 30 }
+        },
+        fast_replaceable_group = "wind-turbine",
+        --collision_mask = { "item-layer", "object-layer", "water-tile"},
+        collision_box = {{-1.0, -1.0}, {1.0, 1.0}},
+        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+        fluid_box = {
+            volume = 200,
+            base_area = 1,
+            height = 2,
+            base_level = -1,
+            --pipe_covers = pipecoverspictures(),
+            pipe_connections = {
+                --{type = "input-output", position = {0, 3}},
+                --{type = "input-output", position = {0, -3}},
+            },
+            production_type = "input-output",
+            filter = "steam",
+            minimum_temperature = 0.0
     },
-    fast_replaceable_group = "wind-turbine",
-	--collision_mask = { "item-layer", "object-layer", "water-tile"},
-    collision_box = {{-1.0, -1.0}, {1.0, 1.0}},
-	selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-    fluid_box =
-    {
-	  volume = 200,
-      base_area = 1,
-      height = 2,
-      base_level = -1,
-      --pipe_covers = pipecoverspictures(),
-      pipe_connections =
-      {
-        --{ type = "input-output", position = {0, 3} },
-        --{ type = "input-output", position = {0, -3} },
-      },
-      production_type = "input-output",
-      filter = "steam",
-      minimum_temperature = 0.0
-    },
-    energy_source =
-    {
-      type = "electric",
-      usage_priority = "primary-output"
+    energy_source = {
+        type = "electric",
+        usage_priority = "primary-output"
     },
 		horizontal_animation = {
 			filename = "__easy-wind-turbine__/graphics/wind_turbine3_horizontal.png",
@@ -209,7 +194,7 @@ data:extend({
                 filename = "__base__/sound/train-wheels.ogg",
                 volume = 0.4
             },
-            match_speed_to_activity = true,			
+            match_speed_to_activity = true,
         },
         min_perceived_performance = 1.0,
         performance_to_sound_speedup = 0.2
@@ -268,7 +253,7 @@ data:extend({
 	{
         type = "recipe",
         name = "wind-turbine-2",
-        energy_required = 10,        
+        energy_required = 10,
         ingredients = {
             {type = "item", name = "advanced-circuit", amount = 4},
             {type = "item", name = "electric-engine-unit", amount = 4},
@@ -281,7 +266,7 @@ data:extend({
 	{
         type = "recipe",
         name = "wind-turbine-3",
-        energy_required = 10,        
+        energy_required = 10,
         ingredients = {
             {type = "item", name = "advanced-circuit", amount = 5},
 			{type = "item", name = "processing-unit", amount = 1},

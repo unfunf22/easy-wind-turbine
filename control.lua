@@ -3,8 +3,6 @@ require "util"
 
 --mod check für spaceage.
 
-
-
 function BuiltEntity(event)
 --pace holder pipe for wind-turbines
 if event.entity.name == "wind-turbine-1" or event.entity.name == "wind-turbine-2" or event.entity.name == "wind-turbine-3" then
@@ -18,10 +16,10 @@ if event.entity.name == "wind-turbine-1" or event.entity.name == "wind-turbine-2
 end
 
 --set tick and fill wind turbine with fuel every 60 seconds
-local interval = 60  -- Intervall in Sekunden
+local interval = 60  -- Intervall in Sec
 
 script.on_event(defines.events.on_tick, function(event)
-    if event.tick % (interval * 60) == 0 then  -- 60 Sekunden = 60 * 60 Ticks
+    if event.tick % (interval * 60) == 0 then  -- 60 Sec = 60 * 60 Ticks
         on_tick_event()
     end
 end)
@@ -50,7 +48,7 @@ function on_tick_event()
             end
         end
     end
-	
+
 	-- Zugriff auf die zweite Oberfläche (Oberfläche 3)
     local surface3 = game.surfaces[3]
     if surface3 then
@@ -62,7 +60,7 @@ function on_tick_event()
             end
         end
     end
-	
+
 	-- Zugriff auf die zweite Oberfläche (Oberfläche 4)
     local surface4 = game.surfaces[4]
     if surface4 then
@@ -76,25 +74,15 @@ function on_tick_event()
     end
 end
 
-
-
-
-
-
-
-
-
-
-
 --this is importent for scenario´s.
 script.on_event(defines.events.on_research_finished, function(event)
 -- Enable wind turbine technologies based on completed research.
 local tech = event.research.force.technologies
-  if event.research.name == "engine" then
-    tech["wind-turbine-1"].enabled = true
-  elseif event.research.name == "electric-engine" then
-    tech["wind-turbine-2"].enabled = tech["wind-turbine-1"].researched
-  elseif event.research.name == "processing-unit" then
-    tech["wind-turbine-3"].enabled = tech["wind-turbine-2"].researched
-  end
+    if event.research.name == "engine" then
+        tech["wind-turbine-1"].enabled = true
+    elseif event.research.name == "electric-engine" then
+        tech["wind-turbine-2"].enabled = tech["wind-turbine-1"].researched
+    elseif event.research.name == "processing-unit" then
+        tech["wind-turbine-3"].enabled = tech["wind-turbine-2"].researched
+    end
 end)

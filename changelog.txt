@@ -1,8 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.7
+Date: 10.11.2024
+  Bugfixes:
+    - Technology names
+  Changes:
+	- some entries are now fixed. (thanks again to Sgamez)
+---------------------------------------------------------------------------------------------------
 Version: 2.0.6
 Date: 10.11.2024
   Bugfixes:
-    - Restructured changelog to allow the in game parcer to read the log. (Sgamez)
+    - Restructured changelog to allow the in game parser to read the log. (Sgamez)
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.5
 Date: 09.11.2024
