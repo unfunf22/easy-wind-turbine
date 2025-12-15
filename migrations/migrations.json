@@ -1,0 +1,24 @@
+{
+	"item":[
+		["easy-wind-turbine-1", "EasyWindTurbine1"],
+		["easy-wind-turbine-2", "EasyWindTurbine2"],
+		["easy-wind-turbine-3", "EasyWindTurbine3"]
+	],
+	"entity": [
+		["easy-wind-turbine-1", "EasyWindTurbine1"],
+		["easy-wind-turbine-2", "EasyWindTurbine2"],
+		["easy-wind-turbine-3", "EasyWindTurbine3"]
+	],
+	"recipe": [
+		["easy-wind-turbine-1", "EasyWindTurbine1"],
+		["easy-wind-turbine-2", "EasyWindTurbine2"],
+		["easy-wind-turbine-3", "EasyWindTurbine3"],
+		["upgrade-wind-turbine-2", "UpgradeWindTurbine2"],
+		["upgrade-wind-turbine-3", "UpgradeWindTurbine3"]
+	],
+	"technology": [
+		["easy-wind-turbine-1", "EasyWindTurbine-1"],
+		["easy-wind-turbine-2", "EasyWindTurbine-2"],
+		["easy-wind-turbine-3", "EasyWindTurbine-3"]
+	]
+}
