@@ -1,0 +1,6 @@
+require("Code.CraftingCategory")
+require("Code.UICatgory")
+require("Code.Entity")
+require("Code.Items")
+require("Code.Recipes")
+require("Code.Technologies")
