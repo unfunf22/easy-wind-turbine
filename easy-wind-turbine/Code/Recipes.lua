@@ -5,6 +5,7 @@ data:extend({
 	{
         type = "recipe",
         name = "EasyWindTurbine1",
+        category = "electronics-or-handcrafting",
         energy_required = 5,
         ingredients = {
             {type = "item", name = "electronic-circuit", amount = 5},
@@ -21,6 +22,7 @@ if SS["EasyWindTurbine"].value == "Crafting" then
         {
             type = "recipe",
             name = "EasyWindTurbine2",
+            category = "electronics-or-handcrafting",
             energy_required = 10,
             ingredients = {
                 {type = "item", name = "electric-engine-unit", amount = 5},
@@ -34,6 +36,7 @@ if SS["EasyWindTurbine"].value == "Crafting" then
         {
             type = "recipe",
             name = "EasyWindTurbine3",
+            category = "electronics-or-handcrafting",
             energy_required = 10,
             ingredients = {
                 {type = "item", name = "processing-unit", amount = 5},
@@ -48,6 +51,7 @@ if SS["EasyWindTurbine"].value == "Crafting" then
         {
             type = "recipe",
             name = "EasyWindTurbine4",
+            category = "electronics-or-handcrafting",
             energy_required = 10,
             ingredients = {
                 {type = "item", name = "electric-engine-unit", amount = 5},
@@ -61,6 +65,7 @@ if SS["EasyWindTurbine"].value == "Crafting" then
         {
             type = "recipe",
             name = "EasyWindTurbine5",
+            category = "electronics-or-handcrafting",
             energy_required = 10,
             ingredients = {
                 {type = "item", name = "processing-unit", amount = 5},
@@ -78,6 +83,7 @@ if SS["EasyWindTurbine"].value == "Upgrading" then
         {
             type = "recipe",
             name = "EasyWindTurbine2",
+            category = "electronics-or-handcrafting",
             energy_required = 10,
             ingredients = {
                 {type = "item", name = "electric-engine-unit", amount = 5},
@@ -91,6 +97,7 @@ if SS["EasyWindTurbine"].value == "Upgrading" then
         {
             type = "recipe",
             name = "EasyWindTurbine3",
+            category = "electronics-or-handcrafting",
             energy_required = 10,
             ingredients = {
                 {type = "item", name = "processing-unit", amount = 5},
@@ -104,6 +111,7 @@ if SS["EasyWindTurbine"].value == "Upgrading" then
         {
             type = "recipe",
             name = "EasyWindTurbine4",
+            category = "electronics-or-handcrafting",
             energy_required = 10,
             ingredients = {
                 {type = "item", name = "electric-engine-unit", amount = 5},
@@ -117,6 +125,7 @@ if SS["EasyWindTurbine"].value == "Upgrading" then
         {
             type = "recipe",
             name = "EasyWindTurbine5",
+            category = "electronics-or-handcrafting",
             energy_required = 10,
             ingredients = {
                 {type = "item", name = "processing-unit", amount = 5},
