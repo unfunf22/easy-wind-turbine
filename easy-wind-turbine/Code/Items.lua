@@ -45,4 +45,35 @@ data:extend({
 		place_result = "EasyWindTurbine3",
 		stack_size = 100
 	},
+	--[[
+	{
+		type = "item",
+		name = "EasyWindTurbine4",
+		icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
+		icon_size= 32,
+		weight = 25000,
+        group = "logistics",
+		subgroup = "WindTurbines",
+		order = "[EasyWindTurbine4]",
+		inventory_move_sound = item_sounds.steam_inventory_move,
+		pick_sound = item_sounds.steam_inventory_pickup,
+		drop_sound = item_sounds.steam_inventory_move,
+		place_result = "EasyWindTurbine4",
+		stack_size = 100
+	},
+	{
+		type = "item",
+		name = "EasyWindTurbine5",
+		icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
+		icon_size= 32,
+		weight = 30000,
+        group = "logistics",
+		subgroup = "WindTurbines",
+		order = "[EasyWindTurbine5]",
+		inventory_move_sound = item_sounds.steam_inventory_move,
+		pick_sound = item_sounds.steam_inventory_pickup,
+		drop_sound = item_sounds.steam_inventory_move,
+		place_result = "EasyWindTurbine5",
+		stack_size = 100
+	},]]
 })

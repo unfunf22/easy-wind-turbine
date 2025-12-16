@@ -1,14 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.15
+Date: xx.01.2026
+  Changes:
+    - Setting for WindTurbines are changes to a selective style.
+    - Full Recipe change with [space-age].
+    - Tech
+---------------------------------------------------------------------------------------------------
 Version: 2.0.14
-Date: 5.11.25
+Date: 5.11.2025
   Features:
-    - Added setting on how to craft Wind Turbines. From scratch or not.
+    - Added setting on how to craft Wind Turbines. From scratch.
   Changes:
     - Restructured code by separating files.
     - Minimum value now set to 1.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.13
-Date: 4.11.25
+Date: 4.11.2025
   Features:
     - Added setting to allow for adjusting the steam Interval Refresh rate.
   Bugfixes:

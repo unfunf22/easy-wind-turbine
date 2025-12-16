@@ -5,6 +5,7 @@ local SS = settings.startup
 script.on_event(defines.events.on_built_entity, BuiltEntity)
 script.on_event(defines.events.on_robot_built_entity, BuiltEntity)
 
+local SteamValue = SS["TurbineSteam"].value
 local interval = SS["Interval"].value
 
 script.on_event(defines.events.on_tick, function(event)
@@ -17,7 +18,7 @@ function refill_turbines()
     for _, surface in pairs(game.surfaces) do
         local turbines = surface.find_entities_filtered{name = {"EasyWindTurbine1", "EasyWindTurbine2", "EasyWindTurbine3"}}
         for _, turbine in ipairs(turbines) do
-            turbine.fluidbox[1] = {name = "steam", amount = 200, temperature = 100}
+            turbine.fluidbox[1] = {name = "steam", amount = SteamValue, temperature = 100}
             turbine.active = true
         end
     end

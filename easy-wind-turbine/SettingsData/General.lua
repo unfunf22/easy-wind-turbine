@@ -8,10 +8,19 @@ data:extend({
         order = "Interval"
     },
     {
-        type = "bool-setting",
-        name = "Upgrades",
+        type = "int-setting",
+        name = "TurbineSteam",
         setting_type = "startup",
-        default_value = true,
+        default_value = 200,
+        minimum_value = 200,
+        order = "TurbineSteam"
+    },
+    {
+        type = "string-setting",
+        name = "EasyWindTurbine",
+        setting_type = "startup",
+        default_value = "Upgrading",
+        allowed_values = {"Upgrading", "Crafting"},
         order = "Upgrades"
     },
 })
