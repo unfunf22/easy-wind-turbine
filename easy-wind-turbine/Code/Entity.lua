@@ -14,7 +14,7 @@ data:extend({
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
 		effectivity = 100.0,
-		fluid_usage_per_tick = 0.01,
+		fluid_usage_per_tick = 0.0098,
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -25,7 +25,7 @@ data:extend({
 		collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
 		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
 		fluid_box = {
-			volume = SteamValue * 1000,
+			volume = SteamValue * 100,
 			base_area = 1,
 			height = 2,
 			base_level = -1,
@@ -77,7 +77,7 @@ data:extend({
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
 		effectivity = 100.0,
-		fluid_usage_per_tick = 0.039,
+		fluid_usage_per_tick = 0.049,
 		maximum_temperature = 100,
 			resistances = {
 			{type = "fire", percent = 20},
@@ -88,7 +88,7 @@ data:extend({
 		collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
 		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
 		fluid_box = {
-			volume = SteamValue * 2000,
+			volume = SteamValue * 200,
 			base_area = 1,
 			height = 2,
 			base_level = -1,
@@ -149,7 +149,7 @@ data:extend({
         collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         fluid_box = {
-            volume = SteamValue * 3000,
+            volume = SteamValue * 300,
             base_area = 1,
             height = 2,
             base_level = -1,
@@ -199,7 +199,7 @@ data:extend({
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
 		effectivity = 100.0,
-		fluid_usage_per_tick = 0.098,
+		fluid_usage_per_tick = 0.1471,
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -210,7 +210,7 @@ data:extend({
         collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         fluid_box = {
-            volume = SteamValue * 4000,
+            volume = SteamValue * 400,
             base_area = 1,
             height = 2,
             base_level = -1,
@@ -260,7 +260,7 @@ data:extend({
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
 		effectivity = 100.0,
-		fluid_usage_per_tick = 0.098,
+		fluid_usage_per_tick = 0.1961,
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -271,7 +271,7 @@ data:extend({
         collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         fluid_box = {
-            volume = SteamValue * 5000,
+            volume = SteamValue * 500,
             base_area = 1,
             height = 2,
             base_level = -1,

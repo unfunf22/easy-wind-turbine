@@ -1,16 +1,24 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.0.15
+Version: 2.1.0
 Date: xx.01.2026
   Features:
+    - Introducing Tier 4 & 5.
     - New setting to increase the amount of steam turbines contain.
   Changes:
+    - Power: Tier 1: 1MW, Tier 2: 5MW, Tier 3: 10MW, Tier 4:15MW, Tier 5: 20MW.
     - Setting for WindTurbines are changes to a selective style.
-    - Full Recipe change.
+    - Recipe change Base Game.
     - [space-age] Full Recipe change.
-    - Tech changes.
+    - Tech changes Base Game.
     - [space-age] Tech changes.
   Info:
-    - Changes made by SGZ in Agreement with original Author.
+    - Changes made by @Sgamez in Agreement with unfunf22.
+    - Old power values: 1 = 1.02MW, 2 = 4MW, 3 = ~10MW, 4 = NA, 5 = NA.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.15
+Date: 5.11.25
+  Bugfixes:
+    - Now it should work in Sandbox without crashing.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.14
 Date: 5.11.2025
@@ -28,7 +36,7 @@ Date: 4.11.2025
     - Steam turbines running out of Steam when using the quality mod.
     - Valid values are 60 to 10. This is more like a temporary fix if you have the space age DLC.
   Credits:
-    - By: SGZ_Creations.(S_gamez)
+    - By: SGZ_Creations.(@Sgamez)
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.12
 Date: 19.01.2025
@@ -44,7 +52,7 @@ Date: 19.01.2025
 Version: 2.0.10
 Date: 18.01.2025
   Bugfixes:
-    - Changed code for more surfaces again (thanks to madox1000 for that updated lua file)
+    - Changed code for more surfaces again (thanks to madox1000 for that updated .lua file)
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.9
 Date: 12.11.2024
@@ -54,20 +62,20 @@ Date: 12.11.2024
 Version: 2.0.8
 Date: 10.11.2024
   Bugfixes:
-    - Changed collsion box to 0.05 (thanks again to Sgamez)
-    - Again changelog related (thanks again to Sgamez)
+    - Changed collsion box to 0.05 (thanks again to @Sgamez)
+    - Again changelog related (thanks again to @Sgamez)
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.7
 Date: 10.11.2024
   Bugfixes:
     - Technology names
   Changes:
-    - some entries are now fixed. (thanks again to Sgamez)
+    - Some entries are now fixed. (thanks again to @Sgamez)
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.6
 Date: 10.11.2024
   Bugfixes:
-    - Restructured changelog to allow the in game parser to read the log. (Sgamez)
+    - Restructured changelog to allow the in game parser to read the log. (@Sgamez)
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.5
 Date: 09.11.2024
@@ -82,19 +90,19 @@ Date: 08.11.2024
 Version: 2.0.3
 Date: 04.11.2024
   Bugfixes:
-    - Possible fix for the new surfaces(other plantes)
+    - Possible fix for the new surfaces(other planets).
   Changes:
-    - Code seperated for each surface to better maintain the code
+    - Code separated for each surface to better maintain the code.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.2
 Date: 04.11.2024
   Bugfixes:
-    - Possible fix for the new surfaces(other plantes)
+    - Possible fix for the new surfaces(other planets).
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.1
 Date: 03.11.2024
   Changes:
-    - Changed code for the new surfaces
+    - Changed code for the new surfaces.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0
 Date: 27.10.2024
@@ -109,7 +117,7 @@ Date: 05.10.2021
 Version: 1.0.1
 Date: 29.09.2021
   Changes:
-    - Janky update doesnt really worked out. Don't load this Version!
+    - Janky update doesn't really work. Don't load this Version!
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 01.02.2020

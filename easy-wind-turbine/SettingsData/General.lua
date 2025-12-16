@@ -12,7 +12,7 @@ data:extend({
         name = "TurbineSteam",
         setting_type = "startup",
         default_value = 200,
-        minimum_value = 200,
+        minimum_value = 100,
         order = "TurbineSteam"
     },
     {
