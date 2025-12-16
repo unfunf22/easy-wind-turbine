@@ -188,7 +188,6 @@ data:extend({
         min_perceived_performance = 1.0,
         performance_to_sound_speedup = 0.2
     },
-	--[[
 	{
 		type = "generator",
 		name = "EasyWindTurbine4",

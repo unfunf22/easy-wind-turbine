@@ -3,7 +3,7 @@ data:extend({
     {
 		type = "item",
 		name = "EasyWindTurbine1",
-		icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
+		icon = "__easy-wind-turbine__/graphics/Item/wind_turbine_item.png",
 		icon_size= 32,
 		weight = 10000,
         group = "logistics",
@@ -18,7 +18,7 @@ data:extend({
 	{
 		type = "item",
 		name = "EasyWindTurbine2",
-		icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
+		icon = "__easy-wind-turbine__/graphics/Item/wind_turbine_item.png",
 		icon_size= 32,
 		weight = 15000,
         group = "logistics",
@@ -33,7 +33,7 @@ data:extend({
 	{
 		type = "item",
 		name = "EasyWindTurbine3",
-		icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
+		icon = "__easy-wind-turbine__/graphics/Item/wind_turbine_item.png",
 		icon_size= 32,
 		weight = 20000,
         group = "logistics",
@@ -45,11 +45,10 @@ data:extend({
 		place_result = "EasyWindTurbine3",
 		stack_size = 100
 	},
-	--[[
 	{
 		type = "item",
 		name = "EasyWindTurbine4",
-		icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
+		icon = "__easy-wind-turbine__/graphics/Item/wind_turbine_item.png",
 		icon_size= 32,
 		weight = 25000,
         group = "logistics",
@@ -64,7 +63,7 @@ data:extend({
 	{
 		type = "item",
 		name = "EasyWindTurbine5",
-		icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
+		icon = "__easy-wind-turbine__/graphics/Item/wind_turbine_item.png",
 		icon_size= 32,
 		weight = 30000,
         group = "logistics",
@@ -75,5 +74,5 @@ data:extend({
 		drop_sound = item_sounds.steam_inventory_move,
 		place_result = "EasyWindTurbine5",
 		stack_size = 100
-	},]]
+	},
 })
