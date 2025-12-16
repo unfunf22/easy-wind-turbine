@@ -50,7 +50,7 @@ data:extend({
         name = "EasyWindTurbine-3",
         icon = "__easy-wind-turbine__/graphics/Tech/windturbine3.png",
         icon_size = 128,
-        prerequisites = {"chemical-science-pack", "EasyWindTurbine-2"},
+        prerequisites = {"EasyWindTurbine-2"},
         effects = {
             {
                 type = "unlock-recipe",
