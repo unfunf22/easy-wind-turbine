@@ -225,7 +225,7 @@ data:extend({
 			usage_priority = "primary-output"
 		},
 		horizontal_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine3_horizontal.png",
+			filename = "__easy-wind-turbine__/graphics/wind_turbine4_horizontal.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
@@ -233,7 +233,7 @@ data:extend({
 			shift = {2.48, -1.45}
 		},
 		vertical_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine3_vertical.png",
+			filename = "__easy-wind-turbine__/graphics/wind_turbine4_vertical.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
@@ -286,7 +286,7 @@ data:extend({
 			usage_priority = "primary-output"
 		},
 		horizontal_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine3_horizontal.png",
+			filename = "__easy-wind-turbine__/graphics/wind_turbine5_horizontal.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
@@ -294,7 +294,7 @@ data:extend({
 			shift = {2.48, -1.45}
 		},
 		vertical_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine3_vertical.png",
+			filename = "__easy-wind-turbine__/graphics/wind_turbine5_vertical.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
