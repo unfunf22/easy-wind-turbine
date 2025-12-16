@@ -1,10 +1,16 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.15
 Date: xx.01.2026
+  Features:
+    - New setting to increase the amount of steam turbines contain.
   Changes:
     - Setting for WindTurbines are changes to a selective style.
-    - Full Recipe change with [space-age].
-    - Tech
+    - Full Recipe change.
+    - [space-age] Full Recipe change.
+    - Tech changes.
+    - [space-age] Tech changes.
+  Info:
+    - Changes made by SGZ in Agreement with original Author.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.14
 Date: 5.11.2025
