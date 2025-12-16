@@ -1,6 +1,6 @@
 {
 	"recipe": [
-		["upgrade-wind-turbine-2", "EasyWindTurbine2"],
-		["upgrade-wind-turbine-3", "EasyWindTurbine3"]
+		["UpgradeWindTurbine2", "EasyWindTurbine2"],
+		["UpgradeWindTurbine3", "EasyWindTurbine3"]
 	]
 }
