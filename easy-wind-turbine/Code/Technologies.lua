@@ -50,7 +50,7 @@ data:extend({
         name = "EasyWindTurbine-3",
         icon = "__easy-wind-turbine__/graphics/Tech/windturbine3.png",
         icon_size = 128,
-        prerequisites = {"advanced-circuit", "EasyWindTurbine-2"},
+        prerequisites = {"chemical-science-pack", "EasyWindTurbine-2"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -72,7 +72,7 @@ data:extend({
         name = "EasyWindTurbine-4",
         icon = "__easy-wind-turbine__/graphics/Tech/windturbine4.png",
         icon_size = 128,
-        prerequisites = {"processing-unit", "EasyWindTurbine-3"},
+        prerequisites = {"production-science-pack", "EasyWindTurbine-3"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -115,29 +115,20 @@ data:extend({
         }
     }
 })
-
 if mods["space-age"] then
 	table.insert(Tech["EasyWindTurbine-3"].unit.ingredients, {"space-science-pack", 		     1})
-    table.insert(Tech["EasyWindTurbine-3"].prerequisites, {
-        "space-science-pack",
-        "planet-discovery-fulgora",
-    })
+    table.insert({"space-science-pack", "planet-discovery-fulgora"}, Tech["EasyWindTurbine-3"].prerequisites)
 
 	table.insert(Tech["EasyWindTurbine-4"].unit.ingredients, {"space-science-pack", 		     1})
 	table.insert(Tech["EasyWindTurbine-4"].unit.ingredients, {"agricultural-science-pack",       1})
 	table.insert(Tech["EasyWindTurbine-4"].unit.ingredients, {"metallurgic-science-pack",        1})
 	table.insert(Tech["EasyWindTurbine-4"].unit.ingredients, {"electromagnetic-science-pack",    1})
-    table.insert(Tech["EasyWindTurbine-4"].prerequisites, {
-        "planet-discovery-vulcanus",
-        "planet-discovery-gleba",
-    })
+    table.insert({"planet-discovery-vulcanus", "planet-discovery-gleba"}, Tech["EasyWindTurbine-4"].prerequisites)
 
 	table.insert(Tech["EasyWindTurbine-5"].unit.ingredients, {"space-science-pack", 		     1})
 	table.insert(Tech["EasyWindTurbine-5"].unit.ingredients, {"agricultural-science-pack",       1})
 	table.insert(Tech["EasyWindTurbine-5"].unit.ingredients, {"metallurgic-science-pack",        1})
 	table.insert(Tech["EasyWindTurbine-5"].unit.ingredients, {"electromagnetic-science-pack",    1})
 	table.insert(Tech["EasyWindTurbine-5"].unit.ingredients, {"cryogenic-science-pack",          1})
-    table.insert(Tech["EasyWindTurbine-5"].prerequisites, {
-        "planet-discovery-aquilo",
-    })
+    table.insert({"planet-discovery-aquilo"}, Tech["EasyWindTurbine-5"].prerequisites)
 end
