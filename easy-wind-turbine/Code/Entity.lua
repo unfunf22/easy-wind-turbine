@@ -6,7 +6,7 @@ data:extend({
 	{
 		type = "generator",
 		name = "EasyWindTurbine1",
-		icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
+		icon = "__easy-wind-turbine__/graphics/Item/wind_turbine_item.png",
 		icon_size = 32,
 		flags = {"placeable-neutral","player-creation"},
 		minable = {mining_time = 1, result = "EasyWindTurbine1"},
@@ -39,7 +39,7 @@ data:extend({
 			usage_priority = "primary-output"
 		},
 		horizontal_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine1_horizontal.png",
+			filename = "__easy-wind-turbine__/graphics/Entity/wind_turbine1_horizontal.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
@@ -48,7 +48,7 @@ data:extend({
 			shift = {2.48, -1.45}
 		},
 		vertical_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine1_vertical.png",
+			filename = "__easy-wind-turbine__/graphics/Entity/wind_turbine1_vertical.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
@@ -69,7 +69,7 @@ data:extend({
 	{
 		type = "generator",
 		name = "EasyWindTurbine2",
-		icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
+		icon = "__easy-wind-turbine__/graphics/Item/wind_turbine_item.png",
 		icon_size = 32,
 		flags = {"placeable-neutral","player-creation"},
 		minable = {mining_time = 1, result = "EasyWindTurbine2"},
@@ -102,7 +102,7 @@ data:extend({
 			usage_priority = "primary-output"
 		},
 		horizontal_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine2_horizontal.png",
+			filename = "__easy-wind-turbine__/graphics/Entity/wind_turbine2_horizontal.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
@@ -110,7 +110,7 @@ data:extend({
 			shift = {2.48, -1.45}
 		},
 		vertical_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine2_vertical.png",
+			filename = "__easy-wind-turbine__/graphics/Entity/wind_turbine2_vertical.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
@@ -130,7 +130,7 @@ data:extend({
 	{
 		type = "generator",
 		name = "EasyWindTurbine3",
-		icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
+		icon = "__easy-wind-turbine__/graphics/Item/wind_turbine_item.png",
 		icon_size = 32,
 		flags = {"placeable-neutral","player-creation"},
 		minable = {mining_time = 1, result = "EasyWindTurbine3"},
@@ -163,7 +163,7 @@ data:extend({
 			usage_priority = "primary-output"
 		},
 		horizontal_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine3_horizontal.png",
+			filename = "__easy-wind-turbine__/graphics/Entity/wind_turbine3_horizontal.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
@@ -171,7 +171,7 @@ data:extend({
 			shift = {2.48, -1.45}
 		},
 		vertical_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine3_vertical.png",
+			filename = "__easy-wind-turbine__/graphics/Entity/wind_turbine3_vertical.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
@@ -191,7 +191,7 @@ data:extend({
 	{
 		type = "generator",
 		name = "EasyWindTurbine4",
-		icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
+		icon = "__easy-wind-turbine__/graphics/Item/wind_turbine_item.png",
 		icon_size = 32,
 		flags = {"placeable-neutral","player-creation"},
 		minable = {mining_time = 1, result = "EasyWindTurbine4"},
@@ -224,7 +224,7 @@ data:extend({
 			usage_priority = "primary-output"
 		},
 		horizontal_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine4_horizontal.png",
+			filename = "__easy-wind-turbine__/graphics/Entity/wind_turbine4_horizontal.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
@@ -232,7 +232,7 @@ data:extend({
 			shift = {2.48, -1.45}
 		},
 		vertical_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine4_vertical.png",
+			filename = "__easy-wind-turbine__/graphics/Entity/wind_turbine4_vertical.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
@@ -252,7 +252,7 @@ data:extend({
 	{
 		type = "generator",
 		name = "EasyWindTurbine5",
-		icon = "__easy-wind-turbine__/graphics/wind_turbine_item.png",
+		icon = "__easy-wind-turbine__/graphics/Item/wind_turbine_item.png",
 		icon_size = 32,
 		flags = {"placeable-neutral","player-creation"},
 		minable = {mining_time = 1, result = "EasyWindTurbine5"},
@@ -285,7 +285,7 @@ data:extend({
 			usage_priority = "primary-output"
 		},
 		horizontal_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine5_horizontal.png",
+			filename = "__easy-wind-turbine__/graphics/Entity/wind_turbine5_horizontal.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
@@ -293,7 +293,7 @@ data:extend({
 			shift = {2.48, -1.45}
 		},
 		vertical_animation = {
-			filename = "__easy-wind-turbine__/graphics/wind_turbine5_vertical.png",
+			filename = "__easy-wind-turbine__/graphics/Entity/wind_turbine5_vertical.png",
 			width = 300,
 			height = 175,
 			frame_count = 20,
@@ -309,5 +309,5 @@ data:extend({
         },
         min_perceived_performance = 1.0,
         performance_to_sound_speedup = 0.2
-    },]]
+    },
 })
