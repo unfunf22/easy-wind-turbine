@@ -118,7 +118,10 @@ data:extend({
 
 if mods["space-age"] then
 	table.insert(Tech["EasyWindTurbine-3"].unit.ingredients, {"space-science-pack", 		     1})
-    table.insert(Tech["EasyWindTurbine-3"].prerequisites, {"space-science-pack"})
+    table.insert(Tech["EasyWindTurbine-3"].prerequisites, {
+        "space-science-pack",
+        "planet-discovery-fulgora",
+    })
 
 	table.insert(Tech["EasyWindTurbine-4"].unit.ingredients, {"space-science-pack", 		     1})
 	table.insert(Tech["EasyWindTurbine-4"].unit.ingredients, {"agricultural-science-pack",       1})
@@ -127,7 +130,6 @@ if mods["space-age"] then
     table.insert(Tech["EasyWindTurbine-4"].prerequisites, {
         "planet-discovery-vulcanus",
         "planet-discovery-gleba",
-        "planet-discovery-fulgora",
     })
 
 	table.insert(Tech["EasyWindTurbine-5"].unit.ingredients, {"space-science-pack", 		     1})
