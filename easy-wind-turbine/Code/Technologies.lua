@@ -7,7 +7,7 @@ data:extend({
 	{
         type = "technology",
         name = "EasyWindTurbine-1",
-        icon = "__easy-wind-turbine__/graphics/Tech/hwindturbine1.png",
+        icon = "__easy-wind-turbine__/graphics/Tech/windturbine1.png",
         icon_size = 128,
         prerequisites = {"engine"},
         effects = {
