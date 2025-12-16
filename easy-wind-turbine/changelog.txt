@@ -1,9 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.0
-Date: xx.01.2026
+Date: 16.12.2025
   Features:
     - Introducing Tier 4 & 5.
-    - New setting to increase the amount of steam turbines contain.
+    - New setting to increase the internal for WindTurbines Simulation.
   Changes:
     - Power: Tier 1: 1MW, Tier 2: 5MW, Tier 3: 10MW, Tier 4:15MW, Tier 5: 20MW.
     - Setting for WindTurbines are changes to a selective style.
@@ -11,6 +11,9 @@ Date: xx.01.2026
     - [space-age] Full Recipe change.
     - Tech changes Base Game.
     - [space-age] Tech changes.
+  Graphics:
+    - New textures for 4 & 5.
+    - Replaced Texture for tier 1.
   Info:
     - Changes made by @Sgamez in Agreement with unfunf22.
     - Old power values: 1 = 1.02MW, 2 = 4MW, 3 = ~10MW, 4 = NA, 5 = NA.
@@ -47,7 +50,7 @@ Date: 19.01.2025
 Version: 2.0.11
 Date: 19.01.2025
   Changes:
-    - Mod is not compatible with KS_Power for now.
+    - Mod is not compatible with KS_Power for now. (fixed in V: 2.0.14)
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.10
 Date: 18.01.2025
@@ -62,7 +65,7 @@ Date: 12.11.2024
 Version: 2.0.8
 Date: 10.11.2024
   Bugfixes:
-    - Changed collsion box to 0.05 (thanks again to @Sgamez)
+    - Changed collision box to 0.05 (thanks again to @Sgamez)
     - Again changelog related (thanks again to @Sgamez)
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.7
