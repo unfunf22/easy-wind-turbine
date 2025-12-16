@@ -1,6 +1,8 @@
 require "util"
 ---@class LuaSettings
 local SS = settings.startup
+---@class ItemPrototype
+local Item = data.raw["item"]
 
 script.on_event(defines.events.on_built_entity, BuiltEntity)
 script.on_event(defines.events.on_robot_built_entity, BuiltEntity)
@@ -8,11 +10,11 @@ script.on_event(defines.events.on_robot_built_entity, BuiltEntity)
 local SteamValue = SS["TurbineSteam"].value
 local interval = SS["Interval"].value
 local Tier = {
-    {data.raw["item"]["EasyWindTurbine1"]},
-    {data.raw["item"]["EasyWindTurbine2"]},
-    {data.raw["item"]["EasyWindTurbine3"]},
-    {data.raw["item"]["EasyWindTurbine4"]},
-    {data.raw["item"]["EasyWindTurbine5"]},
+    {Item["EasyWindTurbine1"]},
+    {Item["EasyWindTurbine2"]},
+    {Item["EasyWindTurbine3"]},
+    {Item["EasyWindTurbine4"]},
+    {Item["EasyWindTurbine5"]},
 }
 
 
