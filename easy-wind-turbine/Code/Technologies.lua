@@ -113,7 +113,7 @@ data:extend({
             },
             time = 20
         }
-    }]]
+    }
 })
 
 if mods["space-age"] then
@@ -125,7 +125,7 @@ if mods["space-age"] then
 	table.insert(Tech["EasyWindTurbine-4"].unit.ingredients, {"metallurgic-science-pack",        1})
 	table.insert(Tech["EasyWindTurbine-4"].unit.ingredients, {"electromagnetic-science-pack",    1})
     table.insert(Tech["EasyWindTurbine-4"].prerequisites, {
-        "planet-discovery-vulcanus", 
+        "planet-discovery-vulcanus",
         "planet-discovery-gleba",
         "planet-discovery-fulgora",
     })
