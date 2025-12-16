@@ -72,11 +72,11 @@ data:extend({
         name = "EasyWindTurbine-4",
         icon = "__easy-wind-turbine__/graphics/Tech/windturbine4.png",
         icon_size = 128,
-        prerequisites = {"electric-engine", "EasyWindTurbine-1"},
+        prerequisites = {"EasyWindTurbine-3"},
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "EasyWindTurbine3"
+                recipe = "EasyWindTurbine4"
             }
         },
         unit = {
@@ -95,7 +95,7 @@ data:extend({
         name = "EasyWindTurbine-5",
         icon = "__easy-wind-turbine__/graphics/Tech/windturbine5.png",
         icon_size = 128,
-        prerequisites = {"electric-engine", "processing-unit", "EasyWindTurbine-2"},
+        prerequisites = {"EasyWindTurbine-4"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -135,4 +135,7 @@ if mods["space-age"] then
 	table.insert(Tech["EasyWindTurbine-5"].unit.ingredients, {"metallurgic-science-pack",        1})
 	table.insert(Tech["EasyWindTurbine-5"].unit.ingredients, {"electromagnetic-science-pack",    1})
 	table.insert(Tech["EasyWindTurbine-5"].unit.ingredients, {"cryogenic-science-pack",          1})
+    table.insert(Tech["EasyWindTurbine-5"].prerequisites, {
+        "planet-discovery-aquilo",
+    })
 end
