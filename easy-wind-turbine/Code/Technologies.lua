@@ -7,9 +7,9 @@ data:extend({
 	{
         type = "technology",
         name = "EasyWindTurbine-1",
-        icon = "__easy-wind-turbine__/graphics/Tech/hwindturbine1.png",
+        icon = "__easy-wind-turbine__/graphics/Tech/windturbine1.png",
         icon_size = 128,
-        prerequisites = {"engine"},
+        prerequisites = {"steel-processing"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -29,7 +29,7 @@ data:extend({
         name = "EasyWindTurbine-2",
         icon = "__easy-wind-turbine__/graphics/Tech/windturbine2.png",
         icon_size = 128,
-        prerequisites = {"electric-engine", "EasyWindTurbine-1"},
+        prerequisites = {"engine", "EasyWindTurbine-1"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -50,7 +50,7 @@ data:extend({
         name = "EasyWindTurbine-3",
         icon = "__easy-wind-turbine__/graphics/Tech/windturbine3.png",
         icon_size = 128,
-        prerequisites = {"processing-unit", "EasyWindTurbine-2"},
+        prerequisites = {"advanced-circuit", "EasyWindTurbine-2"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -72,7 +72,7 @@ data:extend({
         name = "EasyWindTurbine-4",
         icon = "__easy-wind-turbine__/graphics/Tech/windturbine4.png",
         icon_size = 128,
-        prerequisites = {"EasyWindTurbine-3"},
+        prerequisites = {"processing-unit", "EasyWindTurbine-3"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -95,7 +95,7 @@ data:extend({
         name = "EasyWindTurbine-5",
         icon = "__easy-wind-turbine__/graphics/Tech/windturbine5.png",
         icon_size = 128,
-        prerequisites = {"EasyWindTurbine-4"},
+        prerequisites = {"utility-science-pack", "EasyWindTurbine-4"},
         effects = {
             {
                 type = "unlock-recipe",

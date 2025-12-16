@@ -37,7 +37,7 @@ if mods["space-age"] then
                 category = "electronics-or-handcrafting",
                 energy_required = 10,
                 ingredients = {
-                    {type = "item", name = "low-density-structures", amount = 10},
+                    {type = "item", name = "low-density-structure", amount = 10},
                     {type = "item", name = "electric-engine-unit", amount = 10},
                     {type = "item", name = "advanced-circuit", amount = 10},
                     {type = "item", name = "holmium-plate", amount = 10},
@@ -53,7 +53,7 @@ if mods["space-age"] then
                 category = "electronics-or-handcrafting",
                 energy_required = 10,
                 ingredients = {
-                    {type = "item", name = "low-density-structures", amount = 10},
+                    {type = "item", name = "low-density-structure", amount = 10},
                     {type = "item", name = "tungsten-carbide", amount = 50},
                     {type = "item", name = "processing-unit", amount = 5},
                     {type = "item", name = "superconductor", amount = 30},
@@ -68,7 +68,7 @@ if mods["space-age"] then
                 category = "electronics-or-handcrafting",
                 energy_required = 10,
                 ingredients = {
-                    {type = "item", name = "low-density-structures", amount = 10},
+                    {type = "item", name = "low-density-structure", amount = 10},
                     {type = "item", name = "quantum-processor", amount = 5},
                     {type = "item", name = "tungsten-carbide", amount = 50},
                     {type = "item", name = "supercapacitor", amount = 30},
@@ -115,7 +115,7 @@ if mods["space-age"] then
                 category = "electronics-or-handcrafting",
                 energy_required = 10,
                 ingredients = {
-                    {type = "item", name = "low-density-structures", amount = 10},
+                    {type = "item", name = "low-density-structure", amount = 10},
                     {type = "item", name = "electric-engine-unit", amount = 10},
                     {type = "item", name = "advanced-circuit", amount = 10},
                     {type = "item", name = "EasyWindTurbine2", amount = 1},
@@ -132,7 +132,7 @@ if mods["space-age"] then
                 category = "electronics-or-handcrafting",
                 energy_required = 10,
                 ingredients = {
-                    {type = "item", name = "low-density-structures", amount = 10},
+                    {type = "item", name = "low-density-structure", amount = 10},
                     {type = "item", name = "tungsten-carbide", amount = 50},
                     {type = "item", name = "EasyWindTurbine3", amount = 1},
                     {type = "item", name = "processing-unit", amount = 5},
@@ -148,7 +148,7 @@ if mods["space-age"] then
                 category = "electronics-or-handcrafting",
                 energy_required = 10,
                 ingredients = {
-                    {type = "item", name = "low-density-structures", amount = 10},
+                    {type = "item", name = "low-density-structure", amount = 10},
                     {type = "item", name = "quantum-processor", amount = 5},
                     {type = "item", name = "tungsten-carbide", amount = 50},
                     {type = "item", name = "EasyWindTurbine4", amount = 1},
