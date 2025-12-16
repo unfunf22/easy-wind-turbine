@@ -62,7 +62,7 @@ if SS["EasyWindTurbine"].value == "Crafting" then
             category = "electronics-or-handcrafting",
             energy_required = 10,
             ingredients = {
-                {type = "item", name = "battery", amount = 10},
+                {type = "fluid", name = "lubricant", amount = 100},
                 {type = "item", name = "processing-unit", amount = 10},
                 {type = "item", name = "electric-engine-unit", amount = 10},
                 {type = "item", name = "low-density-structure", amount = 10},
@@ -136,7 +136,7 @@ if SS["EasyWindTurbine"].value == "Upgrading" then
             category = "electronics-or-handcrafting",
             energy_required = 10,
             ingredients = {
-                {type = "item", name = "battery", amount = 10},
+                {type = "fluid", name = "lubricant", amount = 100},
                 {type = "item", name = "EasyWindTurbine4", amount = 1},
                 {type = "item", name = "processing-unit", amount = 10},
                 {type = "item", name = "electric-engine-unit", amount = 10},
