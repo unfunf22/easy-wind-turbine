@@ -30,5 +30,43 @@ function refill_turbines()
     end
 end
 
-script.on_event(defines.events.on_built_entity, BuiltEntity)
-script.on_event(defines.events.on_robot_built_entity, BuiltEntity)
+script.on_event(defines.events.on_built_entity, function(event)
+    local entity = event.created_entity or event.entity
+    if not (entity and entity.valid) then return end
+
+    local name = entity.name
+    if name == "EasyWindTurbine1"
+    or name == "EasyWindTurbine2"
+    or name == "EasyWindTurbine3"
+    or name == "EasyWindTurbine4"
+    or name == "EasyWindTurbine5" then
+
+        entity.fluidbox[1] = {
+            name = "steam",
+            amount = SteamAmountValue * SteamRefillValueMultiplier,
+            temperature = 100
+        }
+        entity.active = true
+    end
+end)
+
+
+script.on_event(defines.events.on_robot_built_entity, function(event)
+	 local entity = event.created_entity or event.entity
+    if not (entity and entity.valid) then return end
+
+    local name = entity.name
+    if name == "EasyWindTurbine1"
+    or name == "EasyWindTurbine2"
+    or name == "EasyWindTurbine3"
+    or name == "EasyWindTurbine4"
+    or name == "EasyWindTurbine5" then
+
+        entity.fluidbox[1] = {
+            name = "steam",
+            amount = SteamAmountValue * SteamRefillValueMultiplier,
+            temperature = 100
+        }
+        entity.active = true
+    end
+end)
