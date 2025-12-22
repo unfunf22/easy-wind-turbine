@@ -1,7 +1,6 @@
 ---@class LuaSettings
 local SS = settings.startup
-local FluidBoxAmountValue = SS["FluidBoxAmountValueX"].value
-local FluidBoxAmountValueMultiplicator = SS["FluidBoxAmountValueMultiplicatorX"].value
+local SteamValue = SS["TurbineSteam"].value
 
 data:extend({
 	{
@@ -14,8 +13,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 50.0,
-		fluid_usage_per_tick = 0.0196,
+		effectivity = 100.0,
+		fluid_usage_per_tick = 0.0098,
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -26,7 +25,7 @@ data:extend({
 		collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
 		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
 		fluid_box = {
-			volume = 1 * FluidBoxAmountValue * FluidBoxAmountValueMultiplicator, --was SteamValue * 200
+			volume = SteamValue * 100,
 			base_area = 1,
 			height = 2,
 			base_level = -1,
@@ -89,7 +88,7 @@ data:extend({
 		collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
 		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
 		fluid_box = {
-			volume = 2 * FluidBoxAmountValue * FluidBoxAmountValueMultiplicator,
+			volume = SteamValue * 200,
 			base_area = 1,
 			height = 2,
 			base_level = -1,
@@ -138,8 +137,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 200.0,
-		fluid_usage_per_tick = 0.049,
+		effectivity = 100.0,
+		fluid_usage_per_tick = 0.098,
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -150,7 +149,7 @@ data:extend({
         collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         fluid_box = {
-            volume = 3 * FluidBoxAmountValue * FluidBoxAmountValueMultiplicator,
+            volume = SteamValue * 300,
             base_area = 1,
             height = 2,
             base_level = -1,
@@ -199,8 +198,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 400.0,
-		fluid_usage_per_tick = 0.036775,
+		effectivity = 100.0,
+		fluid_usage_per_tick = 0.1471,
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -211,7 +210,7 @@ data:extend({
         collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         fluid_box = {
-            volume = 4 * FluidBoxAmountValue * FluidBoxAmountValueMultiplicator,
+            volume = SteamValue * 400,
             base_area = 1,
             height = 2,
             base_level = -1,
@@ -260,8 +259,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 500.0,
-		fluid_usage_per_tick = 0.03922, --was 0.1961
+		effectivity = 100.0,
+		fluid_usage_per_tick = 0.1961,
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -272,7 +271,7 @@ data:extend({
         collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         fluid_box = {
-            volume = 5 * FluidBoxAmountValue * FluidBoxAmountValueMultiplicator,
+            volume = SteamValue * 500,
             base_area = 1,
             height = 2,
             base_level = -1,
