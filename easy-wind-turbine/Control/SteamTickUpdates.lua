@@ -1,13 +1,13 @@
 require "util"
 ---@class LuaSettings
 local SS = settings.startup
-
-script.on_event(defines.events.on_built_entity, BuiltEntity)
-script.on_event(defines.events.on_robot_built_entity, BuiltEntity)
-
+local Tier_1 = SS["Tier-1"].value
+local Tier_2 = SS["Tier-2"].value
+local Tier_3 = SS["Tier-3"].value
+local Tier_4 = SS["Tier-4"].value
+local Tier_5 = SS["Tier-5"].value
 local SteamAmountValue = SS["SteamAmountValueX"].value
-local SteamRefillValueMultplier = SS["SteamRefillValueMultplierX"].value
-
+local SteamRefillValueMultiplier = SS["SteamRefillValueMultiplierX"].value
 local interval = SS["Interval"].value --refresh rate at which steam is getting reffiled this value is tied to the UPS that this game uses.
 
 script.on_event(defines.events.on_tick, function(event)
@@ -20,13 +20,15 @@ function refill_turbines()
     for _, surface in pairs(game.surfaces) do
         local turbines = surface.find_entities_filtered{name = {"EasyWindTurbine1", "EasyWindTurbine2", "EasyWindTurbine3", "EasyWindTurbine4", "EasyWindTurbine5"}}
         for _, turbine in ipairs(turbines) do
-            if script.active_mods["quality"] then
-                turbine.fluidbox[1] = {name = "steam", amount = SteamAmountValue * SteamRefillValueMultplier, temperature = 100}
-                turbine.active = true
-            else
-                turbine.fluidbox[1] = {name = "steam", amount = 200, temperature = 100}
-                turbine.active = true
-            end
+            turbine.fluidbox[1] = {name = "steam", amount = Tier_1 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
+            turbine.fluidbox[1] = {name = "steam", amount = Tier_2 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
+            turbine.fluidbox[1] = {name = "steam", amount = Tier_3 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
+            turbine.fluidbox[1] = {name = "steam", amount = Tier_4 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
+            turbine.fluidbox[1] = {name = "steam", amount = Tier_5 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
+            turbine.active = true
         end
     end
 end
+
+script.on_event(defines.events.on_built_entity, BuiltEntity)
+script.on_event(defines.events.on_robot_built_entity, BuiltEntity)

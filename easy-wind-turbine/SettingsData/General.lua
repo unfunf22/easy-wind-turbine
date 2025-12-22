@@ -33,11 +33,11 @@ data:extend({
     },
 	{
         type = "int-setting",
-        name = "SteamRefillValueMultplierX",
+        name = "SteamRefillValueMultiplierX",
         setting_type = "startup",
         default_value = 1,
         minimum_value = 1,
-        order = "1-5", "SteamRefillValueMultplierX"
+        order = "1-5", "SteamRefillValueMultiplierX"
     },
     {
         type = "int-setting",
