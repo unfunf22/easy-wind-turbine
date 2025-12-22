@@ -34,39 +34,43 @@ script.on_event(defines.events.on_built_entity, function(event)
     local entity = event.created_entity or event.entity
     if not (entity and entity.valid) then return end
 
-    local name = entity.name
-    if name == "EasyWindTurbine1"
-    or name == "EasyWindTurbine2"
-    or name == "EasyWindTurbine3"
-    or name == "EasyWindTurbine4"
-    or name == "EasyWindTurbine5" then
+    local Tier_Value = ({
+        EasyWindTurbine1 = SS["Tier-1"].value,
+        EasyWindTurbine2 = SS["Tier-2"].value,
+        EasyWindTurbine3 = SS["Tier-3"].value,
+        EasyWindTurbine4 = SS["Tier-4"].value,
+        EasyWindTurbine5 = SS["Tier-5"].value
+    })[entity.name]
 
-        entity.fluidbox[1] = {
-            name = "steam",
-            amount = SteamAmountValue * SteamRefillValueMultiplier,
-            temperature = 100
-        }
-        entity.active = true
-    end
+    if not Tier_Value or Tier_Value <= 0 then return end
+    entity.fluidbox[1] = {
+        name = "steam",
+        amount = Tier_Value * SteamAmountValue * SteamRefillValueMultiplier,
+        temperature = 100
+    }
+
+    entity.active = true
 end)
 
 
 script.on_event(defines.events.on_robot_built_entity, function(event)
-	 local entity = event.created_entity or event.entity
+	local entity = event.created_entity or event.entity
     if not (entity and entity.valid) then return end
 
-    local name = entity.name
-    if name == "EasyWindTurbine1"
-    or name == "EasyWindTurbine2"
-    or name == "EasyWindTurbine3"
-    or name == "EasyWindTurbine4"
-    or name == "EasyWindTurbine5" then
+    local Tier_Value = ({
+        EasyWindTurbine1 = SS["Tier-1"].value,
+        EasyWindTurbine2 = SS["Tier-2"].value,
+        EasyWindTurbine3 = SS["Tier-3"].value,
+        EasyWindTurbine4 = SS["Tier-4"].value,
+        EasyWindTurbine5 = SS["Tier-5"].value
+    })[entity.name]
 
-        entity.fluidbox[1] = {
-            name = "steam",
-            amount = SteamAmountValue * SteamRefillValueMultiplier,
-            temperature = 100
-        }
-        entity.active = true
-    end
+    if not Tier_Value or Tier_Value <= 0 then return end
+    entity.fluidbox[1] = {
+        name = "steam",
+        amount = Tier_Value * SteamAmountValue * SteamRefillValueMultiplier,
+        temperature = 100
+    }
+
+    entity.active = true
 end)
