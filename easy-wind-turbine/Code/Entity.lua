@@ -1,6 +1,9 @@
 ---@class LuaSettings
 local SS = settings.startup
-local SteamValue = SS["TurbineSteam"].value
+local FluidBoxAmountValue = SS["FluidBoxAmountValueX"].value
+local FluidBoxAmountValueMultiplier = SS["FluidBoxAmountValueMultiplierX"].value
+--local FluidUsagePerTick = SS["FluidUsagePerTickX"].value --For test´s
+--local Effeciency = SS ["EffenciecyX"].value --For test´s
 
 data:extend({
 	{
@@ -13,8 +16,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 100.0,
-		fluid_usage_per_tick = 0.0098,
+		effectivity = 0.981, --50.0,
+		fluid_usage_per_tick = 0.12, --0.0196,
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -25,13 +28,22 @@ data:extend({
 		collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
 		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
 		fluid_box = {
-			volume = SteamValue * 100,
+			--[[
+			Comparing old version with new SteamValue was renamed to: FluidBoxAmountValue & 200 was converted to SS["Tier-X"] 
+			Old: SteamValue * 200:
+			New: FluidBoxAmountValue * SS["Tier-X"] * FluidBoxAmountValueMultiplier
+
+			Tier-X * FluidBoxAmountValue * FluidBoxAmountValueMultiplier
+			100 * 1 * 1
+			so you just have a ground value by 1 multiplied by 100 and again multiplied by 2 if you want to make the fluid box even bigger.
+			]]
+			volume = SS["Tier-1"].value * FluidBoxAmountValue * FluidBoxAmountValueMultiplier,
 			base_area = 1,
 			height = 2,
 			base_level = -1,
 			pipe_connections = {},
 			production_type = "input-output",
-			filter = "steam",
+			filter = "EasyWind",
 			minimum_temperature = 0.0
 		},
 		energy_source = {
@@ -76,8 +88,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 100.0,
-		fluid_usage_per_tick = 0.049,
+		effectivity = 9.81,
+		fluid_usage_per_tick = 0.06,
 		maximum_temperature = 100,
 			resistances = {
 			{type = "fire", percent = 20},
@@ -88,13 +100,13 @@ data:extend({
 		collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
 		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
 		fluid_box = {
-			volume = SteamValue * 200,
+			volume = SS["Tier-2"].value * FluidBoxAmountValue * FluidBoxAmountValueMultiplier,
 			base_area = 1,
 			height = 2,
 			base_level = -1,
 			pipe_connections = {},
 			production_type = "input-output",
-			filter = "steam",
+			filter = "EasyWind",
 			minimum_temperature = 0.0
 		},
 		energy_source = {
@@ -137,8 +149,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 100.0,
-		fluid_usage_per_tick = 0.098,
+		effectivity = 39.21, 
+		fluid_usage_per_tick = 0.03,
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -149,13 +161,13 @@ data:extend({
         collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         fluid_box = {
-            volume = SteamValue * 300,
+            volume = SS["Tier-3"].value * FluidBoxAmountValue * FluidBoxAmountValueMultiplier,
             base_area = 1,
             height = 2,
             base_level = -1,
             pipe_connections = {},
             production_type = "input-output",
-            filter = "steam",
+            filter = "EasyWind",
             minimum_temperature = 0.0
 		},
 		energy_source = {
@@ -198,8 +210,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 100.0,
-		fluid_usage_per_tick = 0.1471,
+		effectivity = 117.61,
+		fluid_usage_per_tick = 0.015,
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -210,13 +222,13 @@ data:extend({
         collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         fluid_box = {
-            volume = SteamValue * 400,
+            volume = SS["Tier-4"].value * FluidBoxAmountValue * FluidBoxAmountValueMultiplier,
             base_area = 1,
             height = 2,
             base_level = -1,
             pipe_connections = {},
             production_type = "input-output",
-            filter = "steam",
+            filter = "EasyWind",
             minimum_temperature = 0.0
 		},
 		energy_source = {
@@ -259,8 +271,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 100.0,
-		fluid_usage_per_tick = 0.1961,
+		effectivity = 331.451,
+		fluid_usage_per_tick = 0.0071, --was 0.1961
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -271,13 +283,13 @@ data:extend({
         collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         fluid_box = {
-            volume = SteamValue * 500,
+            volume = SS["Tier-5"].value * FluidBoxAmountValue * FluidBoxAmountValueMultiplier,
             base_area = 1,
             height = 2,
             base_level = -1,
             pipe_connections = {},
             production_type = "input-output",
-            filter = "steam",
+            filter = "EasyWind",
             minimum_temperature = 0.0
 		},
 		energy_source = {
