@@ -51,7 +51,7 @@ data:extend({
         type = "int-setting",
         name = "Tier-1",
         setting_type = "startup",
-        default_value = 100,
+        default_value = 1000,
         minimum_value = 1,
         order = "2-1", "Tier-1"
     },
@@ -59,7 +59,7 @@ data:extend({
         type = "int-setting",
         name = "Tier-2",
         setting_type = "startup",
-        default_value = 200,
+        default_value = 2000,
         minimum_value = 1,
         order = "2-2", "Tier-2"
     },
@@ -67,7 +67,7 @@ data:extend({
         type = "int-setting",
         name = "Tier-3",
         setting_type = "startup",
-        default_value = 300,
+        default_value = 3000,
         minimum_value = 1,
         order = "2-3", "Tier-3"
     },
@@ -75,7 +75,7 @@ data:extend({
         type = "int-setting",
         name = "Tier-4",
         setting_type = "startup",
-        default_value = 400,
+        default_value = 4000,
         minimum_value = 1,
         order = "2-4", "Tier-4"
     },
@@ -83,19 +83,11 @@ data:extend({
         type = "int-setting",
         name = "Tier-5",
         setting_type = "startup",
-        default_value = 500,
+        default_value = 5000,
         minimum_value = 1,
         order = "2-5", "Tier-5"
     },
 	--[[
-	{
-        type = "string-setting",
-        name = "Info",
-        setting_type = "startup",
-        default_value = "",
-		allow_blank = true,
-        order = "1-7", "Info"
-    },
 	{--this is for testing only
         type = "double-setting",
         name = "FluidUsagePerTickX",
