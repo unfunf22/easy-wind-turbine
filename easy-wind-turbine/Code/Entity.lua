@@ -149,7 +149,7 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 39.41,
+		effectivity = 39.21, 
 		fluid_usage_per_tick = 0.03,
 		maximum_temperature = 100,
 		resistances = {
