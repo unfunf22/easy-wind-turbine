@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.2.0
+Date: xx.01.26
+  Features:
+    - Added new internal liquid named wind.
+    - New settings.
+    - New measures to work on quality.
+  Info:
+    - Make sure that with this new update that you replace all your turbines placed on ground. Since we sadly can't make a migration patch due to the old steam liquid due to other object using steam
+---------------------------------------------------------------------------------------------------
 Version: 2.1.1
 Date: 16.12.2025
   Bugfixes:
