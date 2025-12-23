@@ -16,13 +16,8 @@ data:extend({
 		type = "tips-and-tricks-item",
 		name = "TurbineSettings",
 		category = "EasyWindTurbines",
+		dependencies = {"TurbineInfo"},
 		order = "1AB",
 		indent = 1,
-		trigger = {
-			type = "craft-item",
-			item = "EasyWindTurbine1",
-			event_type = "crafting-finished",
-			count = 1,
-		},
 	},
 })
