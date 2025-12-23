@@ -2,7 +2,8 @@
 local SS = settings.startup
 local FluidBoxAmountValue = SS["FluidBoxAmountValueX"].value
 local FluidBoxAmountValueMultiplier = SS["FluidBoxAmountValueMultiplierX"].value
-
+--local FluidUsagePerTick = SS["FluidUsagePerTickX"].value --For test´s
+--local Effeciency = SS ["EffenciecyX"].value --For test´s
 
 data:extend({
 	{
@@ -15,8 +16,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 50.0,
-		fluid_usage_per_tick = 0.0196,
+		effectivity = 0.981, --50.0,
+		fluid_usage_per_tick = 0.12, --0.0196,
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -42,7 +43,7 @@ data:extend({
 			base_level = -1,
 			pipe_connections = {},
 			production_type = "input-output",
-			filter = "steam",
+			filter = "Wind",
 			minimum_temperature = 0.0
 		},
 		energy_source = {
@@ -87,8 +88,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 100.0,
-		fluid_usage_per_tick = 0.049,
+		effectivity = 9.81,
+		fluid_usage_per_tick = 0.06,
 		maximum_temperature = 100,
 			resistances = {
 			{type = "fire", percent = 20},
@@ -105,7 +106,7 @@ data:extend({
 			base_level = -1,
 			pipe_connections = {},
 			production_type = "input-output",
-			filter = "steam",
+			filter = "Wind",
 			minimum_temperature = 0.0
 		},
 		energy_source = {
@@ -148,8 +149,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 200.0,
-		fluid_usage_per_tick = 0.049,
+		effectivity = 39.41,
+		fluid_usage_per_tick = 0.03,
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -166,7 +167,7 @@ data:extend({
             base_level = -1,
             pipe_connections = {},
             production_type = "input-output",
-            filter = "steam",
+            filter = "Wind",
             minimum_temperature = 0.0
 		},
 		energy_source = {
@@ -209,8 +210,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 400.0,
-		fluid_usage_per_tick = 0.036775,
+		effectivity = 117.61,
+		fluid_usage_per_tick = 0.015,
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -227,7 +228,7 @@ data:extend({
             base_level = -1,
             pipe_connections = {},
             production_type = "input-output",
-            filter = "steam",
+            filter = "Wind",
             minimum_temperature = 0.0
 		},
 		energy_source = {
@@ -270,8 +271,8 @@ data:extend({
 		max_health = 400,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		effectivity = 500.0,
-		fluid_usage_per_tick = 0.03922, --was 0.1961
+		effectivity = 331.451,
+		fluid_usage_per_tick = 0.0071, --was 0.1961
 		maximum_temperature = 100,
 		resistances = {
 			{type = "fire", percent = 20 },
@@ -288,7 +289,7 @@ data:extend({
             base_level = -1,
             pipe_connections = {},
             production_type = "input-output",
-            filter = "steam",
+            filter = "Wind",
             minimum_temperature = 0.0
 		},
 		energy_source = {
