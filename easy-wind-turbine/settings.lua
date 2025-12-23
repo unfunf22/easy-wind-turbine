@@ -1,1 +1,1 @@
-require("SettingsData.General")
+require("Settings.General")

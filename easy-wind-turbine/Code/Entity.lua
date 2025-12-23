@@ -1,7 +1,6 @@
 ---@class LuaSettings
 local SS = settings.startup
-local FluidBoxAmountValue = SS["FluidBoxAmountValueX"].value
-local FluidBoxAmountValueMultiplier = SS["FluidBoxAmountValueMultiplierX"].value
+local FluidBoxAmountValue = SS["FluidBoxAmountValueSetting"].value
 --local FluidUsagePerTick = SS["FluidUsagePerTickX"].value --For test´s
 --local Effeciency = SS ["EffenciecyX"].value --For test´s
 
@@ -28,16 +27,7 @@ data:extend({
 		collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
 		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
 		fluid_box = {
-			--[[
-			Comparing old version with new SteamValue was renamed to: FluidBoxAmountValue & 200 was converted to SS["Tier-X"] 
-			Old: SteamValue * 200:
-			New: FluidBoxAmountValue * SS["Tier-X"] * FluidBoxAmountValueMultiplier
-
-			Tier-X * FluidBoxAmountValue * FluidBoxAmountValueMultiplier
-			100 * 1 * 1
-			so you just have a ground value by 1 multiplied by 100 and again multiplied by 2 if you want to make the fluid box even bigger.
-			]]
-			volume = SS["Tier-1"].value * FluidBoxAmountValue * FluidBoxAmountValueMultiplier,
+			volume = SS["Tier-1"].value * FluidBoxAmountValue,
 			base_area = 1,
 			height = 2,
 			base_level = -1,
@@ -100,7 +90,7 @@ data:extend({
 		collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
 		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
 		fluid_box = {
-			volume = SS["Tier-2"].value * FluidBoxAmountValue * FluidBoxAmountValueMultiplier,
+			volume = SS["Tier-2"].value * FluidBoxAmountValue,
 			base_area = 1,
 			height = 2,
 			base_level = -1,
@@ -161,7 +151,7 @@ data:extend({
         collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         fluid_box = {
-            volume = SS["Tier-3"].value * FluidBoxAmountValue * FluidBoxAmountValueMultiplier,
+            volume = SS["Tier-3"].value * FluidBoxAmountValue,
             base_area = 1,
             height = 2,
             base_level = -1,
@@ -222,7 +212,7 @@ data:extend({
         collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         fluid_box = {
-            volume = SS["Tier-4"].value * FluidBoxAmountValue * FluidBoxAmountValueMultiplier,
+            volume = SS["Tier-4"].value * FluidBoxAmountValue,
             base_area = 1,
             height = 2,
             base_level = -1,
@@ -283,7 +273,7 @@ data:extend({
         collision_box = {{-0.50, -0.50}, {0.50, 0.50}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         fluid_box = {
-            volume = SS["Tier-5"].value * FluidBoxAmountValue * FluidBoxAmountValueMultiplier,
+            volume = SS["Tier-5"].value * FluidBoxAmountValue,
             base_area = 1,
             height = 2,
             base_level = -1,
