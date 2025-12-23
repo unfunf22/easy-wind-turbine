@@ -87,7 +87,7 @@ data:extend({
         minimum_value = 1,
         order = "2-5", "Tier-5"
     },
-    --[[
+	--[[
 	{
         type = "string-setting",
         name = "Info",
@@ -95,6 +95,22 @@ data:extend({
         default_value = "",
 		allow_blank = true,
         order = "1-7", "Info"
+    },
+	{--this is for testing only
+        type = "double-setting",
+        name = "FluidUsagePerTickX",
+        setting_type = "startup",
+        default_value = 0.0,
+        minimum_value = 0.0,
+        order = "3", "Tier-6"
+    },
+	{
+        type = "double-setting",
+        name = "EffenciecyX",
+        setting_type = "startup",
+        default_value = 0.0,
+        minimum_value = 0.0,
+        order = "4", "Tier-6"
     },
     ]]
 })
