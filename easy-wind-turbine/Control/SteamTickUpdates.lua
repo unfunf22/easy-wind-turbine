@@ -1,6 +1,7 @@
 require "util"
 ---@class LuaSettings
 local SS = settings.startup
+
 local Tier_1 = SS["Tier-1"].value
 local Tier_2 = SS["Tier-2"].value
 local Tier_3 = SS["Tier-3"].value
@@ -20,11 +21,11 @@ function refill_turbines()
     for _, surface in pairs(game.surfaces) do
         local turbines = surface.find_entities_filtered{name = {"EasyWindTurbine1", "EasyWindTurbine2", "EasyWindTurbine3", "EasyWindTurbine4", "EasyWindTurbine5"}}
         for _, turbine in ipairs(turbines) do
-            turbine.fluidbox[1] = {name = "steam", amount = Tier_1 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
-            turbine.fluidbox[1] = {name = "steam", amount = Tier_2 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
-            turbine.fluidbox[1] = {name = "steam", amount = Tier_3 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
-            turbine.fluidbox[1] = {name = "steam", amount = Tier_4 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
-            turbine.fluidbox[1] = {name = "steam", amount = Tier_5 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
+            turbine.fluidbox[1] = {name = "Wind", amount = Tier_1 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
+            turbine.fluidbox[1] = {name = "Wind", amount = Tier_2 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
+            turbine.fluidbox[1] = {name = "Wind", amount = Tier_3 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
+            turbine.fluidbox[1] = {name = "Wind", amount = Tier_4 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
+            turbine.fluidbox[1] = {name = "Wind", amount = Tier_5 * SteamAmountValue * SteamRefillValueMultiplier, temperature = 100}
             turbine.active = true
         end
     end
@@ -34,7 +35,7 @@ script.on_event(defines.events.on_built_entity, function(event)
     local entity = event.created_entity or event.entity
     if not (entity and entity.valid) then return end
 
-    local Tier_Value = ({
+    local tier_value = ({
         EasyWindTurbine1 = SS["Tier-1"].value,
         EasyWindTurbine2 = SS["Tier-2"].value,
         EasyWindTurbine3 = SS["Tier-3"].value,
@@ -42,10 +43,10 @@ script.on_event(defines.events.on_built_entity, function(event)
         EasyWindTurbine5 = SS["Tier-5"].value
     })[entity.name]
 
-    if not Tier_Value or Tier_Value <= 0 then return end
+    if not tier_value or tier_value <= 0 then return end
     entity.fluidbox[1] = {
-        name = "steam",
-        amount = Tier_Value * SteamAmountValue * SteamRefillValueMultiplier,
+        name = "Wind",
+        amount = tier_value * SteamAmountValue * SteamRefillValueMultiplier,
         temperature = 100
     }
 
@@ -57,7 +58,7 @@ script.on_event(defines.events.on_robot_built_entity, function(event)
 	local entity = event.created_entity or event.entity
     if not (entity and entity.valid) then return end
 
-    local Tier_Value = ({
+    local tier_value = ({
         EasyWindTurbine1 = SS["Tier-1"].value,
         EasyWindTurbine2 = SS["Tier-2"].value,
         EasyWindTurbine3 = SS["Tier-3"].value,
@@ -65,10 +66,10 @@ script.on_event(defines.events.on_robot_built_entity, function(event)
         EasyWindTurbine5 = SS["Tier-5"].value
     })[entity.name]
 
-    if not Tier_Value or Tier_Value <= 0 then return end
+    if not tier_value or tier_value <= 0 then return end
     entity.fluidbox[1] = {
-        name = "steam",
-        amount = Tier_Value * SteamAmountValue * SteamRefillValueMultiplier,
+        name = "Wind",
+        amount = tier_value * SteamAmountValue * SteamRefillValueMultiplier,
         temperature = 100
     }
 
