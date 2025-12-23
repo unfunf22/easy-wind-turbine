@@ -43,7 +43,7 @@ data:extend({
 			base_level = -1,
 			pipe_connections = {},
 			production_type = "input-output",
-			filter = "Wind",
+			filter = "EasyWind",
 			minimum_temperature = 0.0
 		},
 		energy_source = {
@@ -106,7 +106,7 @@ data:extend({
 			base_level = -1,
 			pipe_connections = {},
 			production_type = "input-output",
-			filter = "Wind",
+			filter = "EasyWind",
 			minimum_temperature = 0.0
 		},
 		energy_source = {
@@ -167,7 +167,7 @@ data:extend({
             base_level = -1,
             pipe_connections = {},
             production_type = "input-output",
-            filter = "Wind",
+            filter = "EasyWind",
             minimum_temperature = 0.0
 		},
 		energy_source = {
@@ -228,7 +228,7 @@ data:extend({
             base_level = -1,
             pipe_connections = {},
             production_type = "input-output",
-            filter = "Wind",
+            filter = "EasyWind",
             minimum_temperature = 0.0
 		},
 		energy_source = {
@@ -289,7 +289,7 @@ data:extend({
             base_level = -1,
             pipe_connections = {},
             production_type = "input-output",
-            filter = "Wind",
+            filter = "EasyWind",
             minimum_temperature = 0.0
 		},
 		energy_source = {
