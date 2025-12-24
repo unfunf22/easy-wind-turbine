@@ -14,4 +14,6 @@ data:extend(
     gas_temperature = 15,
     auto_barrel = false
   }
+
 })
+data.raw.fluid["EasyWind"].hidden = true
