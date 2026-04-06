@@ -29,7 +29,7 @@ data:extend({
         name = "EasyWindTurbine-2",
         icon = "__easy-wind-turbine__/graphics/Tech/windturbine2.png",
         icon_size = 128,
-        prerequisites = {"engine", "EasyWindTurbine-1"},
+        prerequisites = {"engine", "concrete", "EasyWindTurbine-1"},
         effects = {
             {
                 type = "unlock-recipe",
