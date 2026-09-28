@@ -1,4 +1,3 @@
----@class LuaSettings
 local SS = settings.startup
 
 if mods["space-age"] then

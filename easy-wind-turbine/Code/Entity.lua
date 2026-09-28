@@ -1,4 +1,3 @@
----@class LuaSettings
 local SS = settings.startup
 local FluidBoxAmountValue = SS["FluidBoxAmountValueSetting"].value
 --local FluidUsagePerTick = SS["FluidUsagePerTickX"].value --For test´s

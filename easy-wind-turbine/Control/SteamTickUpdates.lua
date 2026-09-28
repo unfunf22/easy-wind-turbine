@@ -1,5 +1,4 @@
 require "util"
----@class LuaSettings
 local SS = settings.startup
 
 local Tier_1 = SS["Tier-1"].value
