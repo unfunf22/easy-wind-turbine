@@ -2,7 +2,7 @@
 Version: 2.2.0
 Date: xx.12.26
   Features:
-    - Added new internal liquid named wind.
+    - Added new internal liquid named EasyWind.
     - New settings.
     - New measures to work on quality.
   Info:
